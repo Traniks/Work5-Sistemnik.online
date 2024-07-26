@@ -1,0 +1,32 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html
+DirectoryIndex  index.php index.html index.html.var index.htm hts_default.html
+
+<IfModule mod_deflate.c>
+    # Включаем сжатие для текстовых ресурсов
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header append Vary Accept-Encoding
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 week"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/javascript "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType image/gif "access plus 1 week"
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType image/jpg "access plus 1 week"
+    ExpiresByType image/jpeg "access plus 1 week"
+</IfModule>

@@ -1,0 +1,123 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Ремонт компьютерной техники Москва и МО">
+    <meta name="keywords" content="Ремонт компьютеров
+            Компьютерный сервис
+            Техническая поддержка ПК
+            Восстановление данных
+            Обслуживание компьютеров
+            Устранение неисправностей ПК
+            Замена комплектующих
+            Диагностика ПК
+            Ремонт ноутбуков
+            Сервисный центр в Москве
+            Мастер по ремонту ПК
+            Компьютерная помощь
+            Ремонт ПК на дому
+            Восстановление работоспособности ПК
+            Профессиональный ремонт компьютерной техники">
+    <meta name="author"
+        content="Ремонт компьютерной техники sistemnik.online">
+    <title>Ремонт компьютерной техники Москва и МО</title>
+    <link href="./assets/scss/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+    <link rel="apple-touch-icon"
+        href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="preload" href="./assets/img/info.webp" as="image">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+        	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KJT7C8QC');</script>
+        <!-- End Google Tag Manager -->
+</head>
+    <body>
+        <div class="modalbox__second" style="
+        position: relative;
+    ">
+            <div class="container">
+                <div class="modalbox__second-content">
+                    <div class="modalbox__second-intro">
+                        <h1>Спасибо за вашу<br> заявку!</h1>
+                        <p class="modalbox__second-subtitle-first">
+                            Ваша заявка успешно отправлена. Мы ценим ваш выбор и
+                            доверие. <br>
+                            Один из наших специалистов свяжется с вами в
+                            ближайшее время
+                        </p>
+                        <h3>Ожидайте звонка в течение следующих</h3>
+                        <h2 class="time">
+                            <div class="tt">
+                                <span style="margin-right: -41px;">05</span>:
+                                <span style="margin-left: -50px;">00</span>
+                            </div>
+                            <div style="font-size: 20px; margin-top: -10px;">
+                                <p>минут</p>
+                                <p>секунд</p>
+                            </div>
+                        </h2>
+                        <p style='font-family: "Bebas Neue Pro", sans-serif;'>
+                            Пожалуйста, будьте на связи.Убедитесь, что ваш
+                            телефон включен и рядом с вами.Мы стараемся
+                            обеспечить максимально быструю и качественную связь
+                            с каждым клиентом.<br>
+                            <span>Спасибо за то, что выбрали нас!</span>
+                        </p>
+                        <div class="btn__wrapper" style="margin: 35px 0;">
+                            <a href="./index.html" class="btn__red" onclick="ym(96823870, 'reachGoal', 'button_41'); return true;">вернуться на сайт</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script src="./assets/js/slick/slick.js"></script>
+        <script src="./assets/js/slick/slick.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.telephone__id').mask('+7 (999) 999-99-99');
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+    var minutes = parseInt($('.time span:eq(0)').text());
+    var seconds = parseInt($('.time span:eq(1)').text());
+    var totalSeconds = minutes * 60 + seconds;
+    var timer = setInterval(function () {
+        totalSeconds--;
+        if (totalSeconds < 0) {
+            clearInterval(timer);
+        }
+        else {
+            var minutesLeft = Math.floor(totalSeconds / 60);
+            var secondsLeft = totalSeconds % 60;
+            $('.time span:eq(0)').text(minutesLeft);
+            $('.time span:eq(1)').text(secondsLeft);
+        }
+    }, 1000);
+});
+        </script>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJT7C8QC"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>
